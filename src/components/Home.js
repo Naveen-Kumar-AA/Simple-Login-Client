@@ -10,7 +10,7 @@ const Home = () => {
     const [result,setResult] = useState("");
     const handleGetReq = async () => {
         try {
-            const res = await axios.get('http://localhost:3001/', {
+            const res = await axios.get('https://simple-login.onrender.com/', {
                 headers : {
                     'Authorization' :  `Bearer ${sessionStorage.getItem('token')}`
                 }
@@ -24,7 +24,7 @@ const Home = () => {
 
     const handleLogout = async ()=>{
         try {
-            const res = await axios.post('http://localhost:3001/logout', `
+            const res = await axios.post('https://simple-login.onrender.com/logout', `
                 <xml>
                     <username>${sessionStorage.getItem('username')}</username>
                 </xml>`, {

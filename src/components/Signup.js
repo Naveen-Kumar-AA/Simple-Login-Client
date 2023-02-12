@@ -15,7 +15,7 @@ const Signup = () => {
 
     const handleSignup = async () => {
         try {
-            const response = await axios.post('http://localhost:3001/signup',{
+            const response = await axios.post('https://simple-login.onrender.com/signup',{
                 username,
                 password,
             })
