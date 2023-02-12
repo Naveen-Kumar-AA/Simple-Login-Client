@@ -52,23 +52,23 @@ const Login = () => {
         //   </div>
         // </div>
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh'}}>
-  <div style={{margin: '10px', border: '1px solid grey', borderRadius: '10px', padding: '20px'}}>
-    <TextField id="outlined-basic" label="Username" variant="outlined" onChange={(event) => setUsername(event.target.value)} style={{margin: '10px'}} />
-    <br />
-    <TextField id="outlined-basic" label="Password" variant="outlined" onChange={(event) => setPassword(event.target.value)} style={{margin: '10px'}} />                
-    <br />
-    <Button variant="contained" onClick={handleLogin} style={{margin: '10px'}}>Login</Button>
-    <br />
-    <Button variant="contained" onClick={handleSignup} style={{margin: '10px'}}>SignUp</Button>   
-    {errorMsg !== '' && (
-      <div style={{margin: '10px', padding: '10px', backgroundColor: '#f8d7da', borderRadius: '10px'}}>
-        <Typography variant="caption" style={{color: '#721c24'}}>
-          {errorMsg}
-        </Typography>
-      </div>
-    )}
-  </div>
-</div>
+          <div style={{margin: '10px', border: '1px solid grey', borderRadius: '10px', padding: '20px'}}>
+            <TextField id="outlined-basic" label="Username" variant="outlined" onChange={(event) => setUsername(event.target.value)} style={{margin: '10px'}} />
+            <br />
+            <TextField id="outlined-basic" label="Password" variant="outlined" onChange={(event) => setPassword(event.target.value)} style={{margin: '10px'}} />                
+            <br />
+            <Button variant="contained" onClick={handleLogin} style={{margin: '10px'}}>Login</Button>
+            <br />
+            <Button variant="contained" onClick={handleSignup} style={{margin: '10px'}}>SignUp</Button>   
+            {errorMsg !== '' && (
+              <div style={{margin: '10px', padding: '10px', backgroundColor: '#f8d7da', borderRadius: '10px'}}>
+                <Typography variant="caption" style={{color: '#721c24'}}>
+                  {errorMsg}
+                </Typography>
+              </div>
+            )}
+          </div>
+        </div>
 
 
 
